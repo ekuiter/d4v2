@@ -1,5 +1,7 @@
 # d4 project
 
+*This version of d4 can also be compiled on Apple Silicon Macs.*
+
 # How to Compile
 
 In order to compile the project cmake (version>=3.1) and ninja have to
