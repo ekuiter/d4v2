@@ -21,7 +21,9 @@
 
 #pragma once
 
-#if defined(_MSC_VER)
+#if defined(__aarch64__)
+#include "sse2neon.h"
+#elif defined(_MSC_VER)
 #include <intrin.h>
 #else
 #include <x86intrin.h>

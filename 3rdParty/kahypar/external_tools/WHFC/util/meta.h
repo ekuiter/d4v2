@@ -5,7 +5,11 @@
 #include <type_traits>
 #include <iostream>
 #include <typeinfo>
+#if defined(__aarch64__)
+#include "sse2neon.h"
+#else
 #include <emmintrin.h>
+#endif
 
 #include <cstdlib>
 #include <memory>
