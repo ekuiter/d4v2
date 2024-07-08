@@ -6,12 +6,22 @@ In order to compile the project cmake (version>=3.1) and ninja have to
 be installed. The following command lines then build and compile the
 project as a static executable.
 
-```console
-$ ./build.sh -s
+## Linux
+
+```
+./build.sh -s
 ```
 
 The executable is called d4 and is in the build repository.
 
-```console
-$ ./build/d4 -h
+```
+./build/d4 -h
+```
+
+## Linux/macOS/Windows (Docker)
+
+```
+docker build -t d4 .
+docker run --rm -i clausy
+docker run --rm -v some_file.cnf:/input clausy -i /input -m counting
 ```
