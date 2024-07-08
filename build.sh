@@ -22,6 +22,13 @@ do
     esac
 done
 
+if [[ -d 3rdParty/patoh_all/$(uname)-$(uname -m) ]]
+then
+    cp -R 3rdParty/patoh_all/"$(uname)-$(uname -m)" 3rdParty/patoh
+else
+    cp -R 3rdParty/patoh_all/Linux-x86_64 3rdParty/patoh
+fi
+
 curRep=$PWD
 if [ $opt -eq 1 ]
 then
