@@ -22,5 +22,5 @@ The executable is called d4 and is in the build repository.
 
 ```
 docker build -t d4 .
-docker run --rm -v some_file.cnf:/input clausy -i /input -m counting
+docker run --rm -v some_file.cnf:/input d4 -i /input -m counting
 ```
