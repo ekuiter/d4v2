@@ -8,4 +8,4 @@ RUN apt-get update && apt install -y \
 WORKDIR /home
 COPY . ./
 RUN ./build.sh -s
-ENTRYPOINT [ "bin/d4_static" ]
+ENTRYPOINT [ "build/d4_static" ]
