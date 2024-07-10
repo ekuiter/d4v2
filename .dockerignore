@@ -1,1 +1,4 @@
-3rdParty/kahypar/build
+/build
+/3rdParty/kahypar/build
+/3rdParty/patoh
+/3rdParty/glucose-3.0/core/lib*.a

@@ -22,6 +22,7 @@ do
     esac
 done
 
+rm -rf 3rdParty/patoh
 if [[ -d 3rdParty/patoh_all/$(uname)-$(uname -m) ]]
 then
     cp -R 3rdParty/patoh_all/"$(uname)-$(uname -m)" 3rdParty/patoh
